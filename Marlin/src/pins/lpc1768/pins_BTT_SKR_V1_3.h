@@ -50,8 +50,8 @@
     #define X_MIN_PIN                      P1_28  // X+
   #endif
 #else
-  #define X_MIN_PIN                        P1_29  // X-
-  #define X_MAX_PIN                        P1_28  // X+
+  #define X_MIN_PIN                        P1_28  // X-  CR swapped
+  #define X_MAX_PIN                        P1_29  // X+
 #endif
 
 #ifdef Y_STALL_SENSITIVITY
@@ -62,8 +62,8 @@
     #define Y_MIN_PIN                      P1_26  // Y+
   #endif
 #else
-  #define Y_MIN_PIN                        P1_27  // Y-
-  #define Y_MAX_PIN                        P1_26  // Y+
+  #define Y_MIN_PIN                        P1_26  // Y-  CR swapped
+  #define Y_MAX_PIN                        P1_27  // Y+
 #endif
 
 #ifdef Z_STALL_SENSITIVITY
@@ -98,7 +98,7 @@
 // Filament Runout Sensor
 //
 #ifndef FIL_RUNOUT_PIN
-  #define FIL_RUNOUT_PIN                   P1_28
+  #define FIL_RUNOUT_PIN                   P1_29 //CR change was P1_28, but that's in use for X stall / homing
 #endif
 
 //
