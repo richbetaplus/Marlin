@@ -44,8 +44,8 @@
 // Mendel90 Z-axis height adjustment
 #define Z_HEIGHT_MM 216  // set to feasible max, but need to measure & set z home offset manually using bed levelling 
 
-// Mendel90 hobbed bolt and 39:11 Wade's gears
-#define E_STEPS_PER_MM ((400 * 16 * 3)/(7 * 3.1416))*(100.0 / 100.0) // replace the numbers in last bracket with the test extrusion result (demand / actual) 
+// Mendel90 with E3D titan
+#define E_STEPS_PER_MM 837*(100/100) // replace the numbers in last bracket with the test extrusion result (demand / actual) 
 
 #define CUSTOM_MACHINE_NAME "Mendel90"
 //===========================================================================
@@ -80,7 +80,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(CR, Mendel90 SKR 1.3 09.04.2020)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(CR, Mendel90 SKR 1.3 07.03.2022)" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -206,7 +206,7 @@
 #define EXTRUDERS 1
 
 // Generally expected filament diameter (1.75, 2.85, 3.0, ...). Used for Volumetric, Filament Width Sensor, etc.
-#define DEFAULT_NOMINAL_FILAMENT_DIA 1.75
+#define DEFAULT_NOMINAL_FILAMENT_DIA 2.85
 
 // For Cyclops or any "multi-extruder" that shares a single nozzle.
 //#define SINGLENOZZLE
